@@ -1,13 +1,33 @@
-# Resume LaTeX Repo
+# LaTeX Resume Template
 
-This repository contains LaTeX code for generating a professional resume. It
-includes templates and examples to help you get started.
+Simple ATS friendly Latex resume template using font awesome icons.
+
+## Features
+
+- Clean, professional design
+- Easy to customize
+- Includes examples for common resume sections
+- Built-in font files
+- custom commands for easy formatting (e.g. `\role` and `\datedsubsection`)
+
+![Resume Preview](./preview/preview.png)
 
 ## Getting Started
 
 To get started, simply clone this repository and open the `resume.tex` file in
 your favorite LaTeX editor (vs code recommended). From there, you can customize
 the template to fit your needs.
+
+## Directory Structure
+
+The directory structure is as follows:
+
+```bash
+fonts/          # Contains fonts used in the template
+meta/           # Contains main resume class file and other meta files
+sections/       # Contains sections of the resume (e.g. education, experience)
+resume.tex      # Main resume file
+```
 
 ## Contributing
 
