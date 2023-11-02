@@ -3,7 +3,11 @@ name: Build resume file and deploy to github pages
 on:
   push:
     branches: master
-    paths-ignore: README.md
+    paths-ignore:
+      - README.md
+      - .gitignore
+      - LICENSE
+      - preview/*
 
   workflow_dispatch:
 
