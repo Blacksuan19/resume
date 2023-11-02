@@ -10,7 +10,10 @@ Simple ATS friendly Latex resume template using font awesome icons.
 - Built-in font files
 - custom commands for easy formatting (e.g. `\role` and `\datedsubsection`)
 
-![Resume Preview](./preview/preview.png)
+<details>
+<summary>Resume Format Preview</summary>
+<img src="./preview/preview.png">
+</details>
 
 ## Getting Started
 
