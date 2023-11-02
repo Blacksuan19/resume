@@ -1,0 +1,26 @@
+name: Build resume file and deploy to github pages
+
+on:
+  push:
+    branches: master
+    paths-ignore: README.md
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Compile LaTeX document
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+          latexmk_use_lualatex: true
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: resume.pdf
